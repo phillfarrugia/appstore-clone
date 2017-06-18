@@ -14,6 +14,12 @@ class TodaySectionHeader: UICollectionReusableView {
 
     @IBOutlet private weak var profileImageView: UIImageView!
     
+    internal var shouldShowProfileImageView: Bool = true {
+        didSet {
+            profileImageView.isHidden = !shouldShowProfileImageView
+        }
+    }
+    
     // MARK: - Factory Method
     
     internal static func dequeue(fromCollectionView collectionView: UICollectionView, ofKind kind: String, atIndexPath indexPath: IndexPath) -> TodaySectionHeader {
