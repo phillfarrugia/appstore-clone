@@ -17,6 +17,9 @@ internal class GetStartedListCell: BaseRoundedCardCell {
     /// Overlay View
     @IBOutlet private weak var overlayView: UIView!
     
+    /// Corner View
+    @IBOutlet private weak var cornerView: UIView!
+    
     // MARK: - Factory Method
     
     internal static func dequeue(fromCollectionView collectionView: UICollectionView, atIndexPath indexPath: IndexPath) -> GetStartedListCell {
@@ -29,8 +32,8 @@ internal class GetStartedListCell: BaseRoundedCardCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        imageView.layer.cornerRadius = 14.0
-        overlayView.layer.cornerRadius = 14.0
+        cornerView.layer.cornerRadius = 14.0
+        cornerView.clipsToBounds = true
     }
 
 }

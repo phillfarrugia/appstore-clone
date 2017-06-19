@@ -22,13 +22,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reA-wS-VGv">
-                    <rect key="frame" x="20" y="34" width="103.5" height="43"/>
+                    <rect key="frame" x="20" y="36.5" width="103.5" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="TRX-c8-PZS">
-                    <rect key="frame" x="921" y="38" width="35" height="35"/>
+                    <rect key="frame" x="921" y="40.5" width="35" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="BoY-TP-Bm6"/>
                         <constraint firstAttribute="width" constant="35" id="zQT-65-gCg"/>
@@ -41,7 +41,7 @@
                 <constraint firstAttribute="trailing" secondItem="TRX-c8-PZS" secondAttribute="trailing" constant="20" id="8rj-GT-QgY"/>
                 <constraint firstItem="4WC-ZI-MEs" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="BUv-SY-ord"/>
                 <constraint firstItem="reA-wS-VGv" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="QPq-IH-jKA"/>
-                <constraint firstItem="reA-wS-VGv" firstAttribute="top" secondItem="4WC-ZI-MEs" secondAttribute="bottom" id="jD5-Rw-YAa"/>
+                <constraint firstItem="reA-wS-VGv" firstAttribute="top" secondItem="4WC-ZI-MEs" secondAttribute="bottom" constant="2" id="jD5-Rw-YAa"/>
                 <constraint firstItem="4WC-ZI-MEs" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="20" id="osd-kh-9ZN"/>
             </constraints>
             <connections>

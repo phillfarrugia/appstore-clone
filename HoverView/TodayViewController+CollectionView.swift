@@ -37,9 +37,9 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
         if indexPath.row == 0 {
             return WorldPremiereCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
         } else if indexPath.row == 1 {
-            return FromTheEditorsCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
-        } else if indexPath.row == 2 {
             return AppOfTheDayCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
+        } else if indexPath.row == 2 {
+            return FromTheEditorsCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
         } else {
             return GetStartedListCell.dequeue(fromCollectionView: collectionView, atIndexPath: indexPath)
         }
@@ -48,7 +48,38 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
     // MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: BaseRoundedCardCell.cellHeight)
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return CGSize(width: collectionView.bounds.width, height: BaseRoundedCardCell.cellHeight)
+        } else {
+            
+            // Number of Items per Row
+            let numberOfItemsInRow = 2
+            
+            // Current Row Number
+            let rowNumber = indexPath.item/numberOfItemsInRow
+            
+            // Compressed With
+            let compressedWidth = collectionView.bounds.width/3
+            
+            // Expanded Width
+            let expandedWidth = (collectionView.bounds.width/3) * 2
+            
+            // Is Even Row
+            let isEvenRow = rowNumber % 2 == 0
+            
+            // Is First Item in Row
+            let isFirstItem = indexPath.item % numberOfItemsInRow != 0
+            
+            // Calculate Width
+            var width: CGFloat = 0.0
+            if isEvenRow {
+                width = isFirstItem ? compressedWidth : expandedWidth
+            } else {
+                width = isFirstItem ? expandedWidth : compressedWidth
+            }
+            
+            return CGSize(width: width, height: BaseRoundedCardCell.cellHeight)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -59,6 +90,16 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
         let sectionHeader = TodaySectionHeader.dequeue(fromCollectionView: collectionView, ofKind: kind, atIndexPath: indexPath)
         sectionHeader.shouldShowProfileImageView = (indexPath.section == 0)
         return sectionHeader
+    }
+    
+    // MARK: - UICollectionViewDelegate
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            presentStoryAnimationController.selectedCardFrame = cell.frame
+            dismissStoryAnimationController.selectedCardFrame = cell.frame
+            performSegue(withIdentifier: "presentStory", sender: self)
+        }
     }
     
     

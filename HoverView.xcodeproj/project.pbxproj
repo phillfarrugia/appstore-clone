@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F68726328846CEED2119C295 /* Pods_HoverView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0671D9ED588DEDA4879E66 /* Pods_HoverView.framework */; };
 		F70D31EA1EF5EE4400DC3326 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D31E91EF5EE4400DC3326 /* GradientView.swift */; };
 		F70D31ED1EF6090400DC3326 /* WorldPremiereCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D31EB1EF6090400DC3326 /* WorldPremiereCell.swift */; };
 		F70D31EE1EF6090400DC3326 /* WorldPremiereCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70D31EC1EF6090400DC3326 /* WorldPremiereCell.xib */; };
@@ -22,6 +23,9 @@
 		F70D32041EF62E3D00DC3326 /* AppOfTheDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70D32021EF62E3D00DC3326 /* AppOfTheDayCell.xib */; };
 		F70D32071EF634FA00DC3326 /* GetStartedListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D32051EF634FA00DC3326 /* GetStartedListCell.swift */; };
 		F70D32081EF634FA00DC3326 /* GetStartedListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F70D32061EF634FA00DC3326 /* GetStartedListCell.xib */; };
+		F70D320B1EF6532300DC3326 /* PresentStoryViewAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D320A1EF6532300DC3326 /* PresentStoryViewAnimationController.swift */; };
+		F7C44AA61EF70CF700E8E658 /* StoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C44AA51EF70CF700E8E658 /* StoryDetailViewController.swift */; };
+		F7C44AA81EF76B0F00E8E658 /* DismissStoryViewAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C44AA71EF76B0F00E8E658 /* DismissStoryViewAnimationController.swift */; };
 		F7F0F14F1EF5EA1C00D73E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F0F14E1EF5EA1C00D73E20 /* AppDelegate.swift */; };
 		F7F0F1511EF5EA1C00D73E20 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F0F1501EF5EA1C00D73E20 /* TodayViewController.swift */; };
 		F7F0F1541EF5EA1C00D73E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F0F1521EF5EA1C00D73E20 /* Main.storyboard */; };
@@ -32,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7969423CEC4E6739F6E8EED0 /* Pods-HoverView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoverView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HoverView/Pods-HoverView.debug.xcconfig"; sourceTree = "<group>"; };
+		BD89E3096EF2B1D912C836DA /* Pods-HoverView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HoverView.release.xcconfig"; path = "Pods/Target Support Files/Pods-HoverView/Pods-HoverView.release.xcconfig"; sourceTree = "<group>"; };
+		BF0671D9ED588DEDA4879E66 /* Pods_HoverView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HoverView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70D31E91EF5EE4400DC3326 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F70D31EB1EF6090400DC3326 /* WorldPremiereCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorldPremiereCell.swift; path = CollectionViewCells/WorldPremiereCell.swift; sourceTree = "<group>"; };
 		F70D31EC1EF6090400DC3326 /* WorldPremiereCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WorldPremiereCell.xib; path = CollectionViewCells/WorldPremiereCell.xib; sourceTree = "<group>"; };
@@ -47,6 +54,9 @@
 		F70D32021EF62E3D00DC3326 /* AppOfTheDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AppOfTheDayCell.xib; path = CollectionViewCells/AppOfTheDayCell.xib; sourceTree = "<group>"; };
 		F70D32051EF634FA00DC3326 /* GetStartedListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetStartedListCell.swift; path = CollectionViewCells/GetStartedListCell.swift; sourceTree = "<group>"; };
 		F70D32061EF634FA00DC3326 /* GetStartedListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GetStartedListCell.xib; path = CollectionViewCells/GetStartedListCell.xib; sourceTree = "<group>"; };
+		F70D320A1EF6532300DC3326 /* PresentStoryViewAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentStoryViewAnimationController.swift; sourceTree = "<group>"; };
+		F7C44AA51EF70CF700E8E658 /* StoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryDetailViewController.swift; sourceTree = "<group>"; };
+		F7C44AA71EF76B0F00E8E658 /* DismissStoryViewAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissStoryViewAnimationController.swift; sourceTree = "<group>"; };
 		F7F0F14B1EF5EA1C00D73E20 /* HoverView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoverView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F0F14E1EF5EA1C00D73E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7F0F1501EF5EA1C00D73E20 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -63,12 +73,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68726328846CEED2119C295 /* Pods_HoverView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B0D908CC428D5BCD639D2EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7969423CEC4E6739F6E8EED0 /* Pods-HoverView.debug.xcconfig */,
+				BD89E3096EF2B1D912C836DA /* Pods-HoverView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3E42C3061EA8AF928F383B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF0671D9ED588DEDA4879E66 /* Pods_HoverView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F70D31EF1EF6090B00DC3326 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +122,22 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		F70D32091EF6530900DC3326 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F70D320A1EF6532300DC3326 /* PresentStoryViewAnimationController.swift */,
+				F7C44AA71EF76B0F00E8E658 /* DismissStoryViewAnimationController.swift */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
 		F7F0F1421EF5EA1C00D73E20 = {
 			isa = PBXGroup;
 			children = (
 				F7F0F14D1EF5EA1C00D73E20 /* HoverView */,
 				F7F0F14C1EF5EA1C00D73E20 /* Products */,
+				2B0D908CC428D5BCD639D2EE /* Pods */,
+				A3E42C3061EA8AF928F383B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +155,8 @@
 				F7F0F14E1EF5EA1C00D73E20 /* AppDelegate.swift */,
 				F7F0F1501EF5EA1C00D73E20 /* TodayViewController.swift */,
 				F70D31F41EF60CAE00DC3326 /* TodayViewController+CollectionView.swift */,
+				F7C44AA51EF70CF700E8E658 /* StoryDetailViewController.swift */,
+				F70D32091EF6530900DC3326 /* Animation */,
 				F70D31F61EF61C1B00DC3326 /* Views */,
 				F70D31EF1EF6090B00DC3326 /* Cells */,
 				F7F0F1681EF5EBB700D73E20 /* Utility */,
@@ -146,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7F0F15D1EF5EA1C00D73E20 /* Build configuration list for PBXNativeTarget "HoverView" */;
 			buildPhases = (
+				A008B997BB40B7DEBDE69657 /* [CP] Check Pods Manifest.lock */,
 				F7F0F1471EF5EA1C00D73E20 /* Sources */,
 				F7F0F1481EF5EA1C00D73E20 /* Frameworks */,
 				F7F0F1491EF5EA1C00D73E20 /* Resources */,
+				ADE4AF6D535A828287BDA121 /* [CP] Embed Pods Frameworks */,
+				8A771BE2A12A284BE36EF881 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +256,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A771BE2A12A284BE36EF881 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoverView/Pods-HoverView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A008B997BB40B7DEBDE69657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADE4AF6D535A828287BDA121 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HoverView/Pods-HoverView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7F0F1471EF5EA1C00D73E20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +313,7 @@
 				F7F0F1511EF5EA1C00D73E20 /* TodayViewController.swift in Sources */,
 				F70D32001EF6273000DC3326 /* BaseRoundedCardCell.swift in Sources */,
 				F70D31ED1EF6090400DC3326 /* WorldPremiereCell.swift in Sources */,
+				F7C44AA81EF76B0F00E8E658 /* DismissStoryViewAnimationController.swift in Sources */,
 				F70D31F91EF61C5E00DC3326 /* TodaySectionHeader.swift in Sources */,
 				F70D31F51EF60CAE00DC3326 /* TodayViewController+CollectionView.swift in Sources */,
 				F70D32071EF634FA00DC3326 /* GetStartedListCell.swift in Sources */,
@@ -230,6 +323,8 @@
 				F7F0F1671EF5EB3900D73E20 /* UIView+Constraints.swift in Sources */,
 				F70D32031EF62E3D00DC3326 /* AppOfTheDayCell.swift in Sources */,
 				F7F0F14F1EF5EA1C00D73E20 /* AppDelegate.swift in Sources */,
+				F7C44AA61EF70CF700E8E658 /* StoryDetailViewController.swift in Sources */,
+				F70D320B1EF6532300DC3326 /* PresentStoryViewAnimationController.swift in Sources */,
 				F7F0F1631EF5EAEF00D73E20 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +446,7 @@
 		};
 		F7F0F15E1EF5EA1C00D73E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7969423CEC4E6739F6E8EED0 /* Pods-HoverView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6VSG94VVFH;
@@ -360,11 +456,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = phillfarrugia.HoverView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F7F0F15F1EF5EA1C00D73E20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD89E3096EF2B1D912C836DA /* Pods-HoverView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6VSG94VVFH;
@@ -374,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = phillfarrugia.HoverView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
