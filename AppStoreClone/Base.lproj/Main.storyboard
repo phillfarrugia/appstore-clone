@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TodayViewController" customModule="AppStoreClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PCm-A0-gVF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5hB-tf-DPi">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PCm-A0-gVF" secondAttribute="trailing" id="Kdz-YZ-4ty"/>
+                            <constraint firstItem="PCm-A0-gVF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KzI-tw-x8k"/>
+                            <constraint firstItem="PCm-A0-gVF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PMa-uK-lT6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PCm-A0-gVF" secondAttribute="bottom" id="snv-6b-EkF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="PCm-A0-gVF" id="AHR-0P-Xig"/>
+                        <segue destination="urk-bB-7gL" kind="presentation" identifier="presentStory" id="eVb-GV-bhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="39"/>
+        </scene>
+        <!--Story Detail View Controller-->
+        <scene sceneID="vUy-GB-Y24">
+            <objects>
+                <viewController id="urk-bB-7gL" customClass="StoryDetailViewController" customModule="AppStoreClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2L1-am-fDW"/>
+                        <viewControllerLayoutGuide type="bottom" id="opS-px-9xi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g7f-W6-jBa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0G-xr-uy0">
+                                <rect key="frame" x="20" y="40" width="335" height="627"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T42-bT-V0h">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="627"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monument-valley" translatesAutoresizingMaskIntoConstraints="NO" id="V2J-r3-S12">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="500"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="500" id="FEJ-w9-gpH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="The Art of the Impossible" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3B-K9-gc4">
+                                                <rect key="frame" x="20" y="37" width="264" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORLD PREMIERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYA-YL-0Nq">
+                                                <rect key="frame" x="20" y="20" width="125" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inside the extraordinary world of Monument Valley 2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBE-bX-oK6">
+                                                <rect key="frame" x="20" y="441.5" width="295" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6u-LC-ZiY">
+                                                <rect key="frame" x="300" y="15" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="4P7-Fc-QBZ"/>
+                                                    <constraint firstAttribute="height" constant="20" id="SZL-oU-xln"/>
+                                                </constraints>
+                                                <state key="normal" image="light-close-button"/>
+                                                <connections>
+                                                    <action selector="closeButtonDidPress:" destination="urk-bB-7gL" eventType="touchUpInside" id="zyZ-T4-WjN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="V2J-r3-S12" firstAttribute="leading" secondItem="T42-bT-V0h" secondAttribute="leading" id="BeG-Dp-q2W"/>
+                                            <constraint firstItem="E3B-K9-gc4" firstAttribute="top" secondItem="aYA-YL-0Nq" secondAttribute="bottom" id="Hng-Aw-zf1"/>
+                                            <constraint firstItem="kBE-bX-oK6" firstAttribute="leading" secondItem="T42-bT-V0h" secondAttribute="leading" constant="20" id="NJL-Xi-TJQ"/>
+                                            <constraint firstItem="aYA-YL-0Nq" firstAttribute="top" secondItem="V2J-r3-S12" secondAttribute="top" constant="20" id="Na4-F0-r2B"/>
+                                            <constraint firstAttribute="trailing" secondItem="V2J-r3-S12" secondAttribute="trailing" id="YBI-UR-Tbu"/>
+                                            <constraint firstItem="V2J-r3-S12" firstAttribute="bottom" secondItem="kBE-bX-oK6" secondAttribute="bottom" constant="20" id="jEC-TI-Osc"/>
+                                            <constraint firstItem="V2J-r3-S12" firstAttribute="top" secondItem="T42-bT-V0h" secondAttribute="top" id="lAL-SI-hSU"/>
+                                            <constraint firstAttribute="bottom" secondItem="V2J-r3-S12" secondAttribute="bottom" id="oXm-dE-7Aq"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aYA-YL-0Nq" secondAttribute="trailing" constant="20" id="DGM-Af-0m4"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="E3B-K9-gc4" secondAttribute="trailing" constant="20" id="DYo-MG-hLM"/>
+                                    <constraint firstAttribute="trailing" secondItem="P6u-LC-ZiY" secondAttribute="trailing" constant="15" id="Ec1-wa-iZq"/>
+                                    <constraint firstAttribute="bottom" secondItem="T42-bT-V0h" secondAttribute="bottom" id="F2s-Il-Zc2"/>
+                                    <constraint firstItem="P6u-LC-ZiY" firstAttribute="top" secondItem="T0G-xr-uy0" secondAttribute="top" constant="15" id="Iho-22-6Ut"/>
+                                    <constraint firstAttribute="trailing" secondItem="T42-bT-V0h" secondAttribute="trailing" id="Ydb-yN-MQO"/>
+                                    <constraint firstItem="T42-bT-V0h" firstAttribute="top" secondItem="T0G-xr-uy0" secondAttribute="top" id="ZCi-Gt-HiV"/>
+                                    <constraint firstItem="aYA-YL-0Nq" firstAttribute="leading" secondItem="T0G-xr-uy0" secondAttribute="leading" constant="20" id="fOF-c7-Za0"/>
+                                    <constraint firstItem="T42-bT-V0h" firstAttribute="leading" secondItem="T0G-xr-uy0" secondAttribute="leading" id="gVi-xV-nag"/>
+                                    <constraint firstItem="V2J-r3-S12" firstAttribute="width" secondItem="T0G-xr-uy0" secondAttribute="width" id="hUe-0x-xLE"/>
+                                    <constraint firstItem="E3B-K9-gc4" firstAttribute="leading" secondItem="T0G-xr-uy0" secondAttribute="leading" constant="20" id="u9Q-YB-f47"/>
+                                    <constraint firstAttribute="trailing" secondItem="kBE-bX-oK6" secondAttribute="trailing" constant="20" id="xhN-vb-PTy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T0G-xr-uy0" firstAttribute="leading" secondItem="g7f-W6-jBa" secondAttribute="leading" constant="20" id="CcQ-Ld-B5I"/>
+                            <constraint firstItem="opS-px-9xi" firstAttribute="top" secondItem="T0G-xr-uy0" secondAttribute="bottom" id="FR6-9V-PvM"/>
+                            <constraint firstAttribute="trailing" secondItem="T0G-xr-uy0" secondAttribute="trailing" constant="20" id="g2M-4U-gp1"/>
+                            <constraint firstItem="T0G-xr-uy0" firstAttribute="top" secondItem="2L1-am-fDW" secondAttribute="bottom" constant="20" id="krD-uv-cqO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerBottomConstraint" destination="FR6-9V-PvM" id="FN9-0D-scG"/>
+                        <outlet property="containerLeadingConstraint" destination="CcQ-Ld-B5I" id="4Dd-cL-faR"/>
+                        <outlet property="containerTopConstraint" destination="krD-uv-cqO" id="6Jg-wm-niS"/>
+                        <outlet property="containerTrailingConstraint" destination="g2M-4U-gp1" id="ab7-BA-ZKD"/>
+                        <outlet property="contentContainerView" destination="T0G-xr-uy0" id="ckL-lA-nHZ"/>
+                        <outlet property="headerImageHeightConstraint" destination="FEJ-w9-gpH" id="i7p-Ff-gD5"/>
+                        <outlet property="headerImageView" destination="V2J-r3-S12" id="TSN-UC-eaR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aE-Y6-3PR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922.39999999999998" y="39.130434782608695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="light-close-button" width="40" height="40"/>
+        <image name="monument-valley" width="675" height="900"/>
+    </resources>
+</document>
