@@ -33,7 +33,7 @@ internal class DismissStoryViewAnimationController: NSObject, UIViewControllerAn
         UIView.animate(withDuration: duration, animations: {
             fromViewController.positionContainer(left: 20.0,
                                                  right: 20.0,
-                                                 top: self.selectedCardFrame.origin.y + 20.0,
+                                                 top: toViewController.collectionView.convert(self.selectedCardFrame, to: toViewController.collectionView.superview).origin.y + 20.0,
                                                  bottom: 0.0)
             fromViewController.setHeaderHeight(self.selectedCardFrame.size.height - 40.0)
             fromViewController.configureRoundedCorners(shouldRound: true)
