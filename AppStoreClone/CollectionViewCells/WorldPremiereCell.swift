@@ -13,6 +13,9 @@ internal class WorldPremiereCell: BaseRoundedCardCell {
     
     /// Image View
     @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var summaryLabel: UILabel!
     
     // MARK: - Factory Method
     
@@ -27,6 +30,8 @@ internal class WorldPremiereCell: BaseRoundedCardCell {
         super.awakeFromNib()
         
         imageView.layer.cornerRadius = 14.0
+        titleLabel.attributedText = NSMutableAttributedString(string: "The Art of\nthe Impossible")
+        titleLabel.font = UIFont.systemFont(ofSize: 28.0, weight: UIFontWeightSemibold)
     }
 
 }

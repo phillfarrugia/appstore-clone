@@ -26,7 +26,7 @@ internal class PresentStoryViewAnimationController: NSObject, UIViewControllerAn
         containerView.addSubview(toViewController.view)
         toViewController.positionContainer(left: 20.0,
                                            right: 20.0,
-                                           top: selectedCardFrame.origin.y + 20.0,
+                                           top: fromViewController.collectionView.convert(selectedCardFrame, to: fromViewController.collectionView.superview).origin.y + 20.0,
                                            bottom: 0.0)
         toViewController.setHeaderHeight(self.selectedCardFrame.size.height - 40.0)
         toViewController.configureRoundedCorners(shouldRound: true)

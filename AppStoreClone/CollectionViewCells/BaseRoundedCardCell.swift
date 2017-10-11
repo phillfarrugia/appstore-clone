@@ -11,7 +11,7 @@ import CoreMotion
 
 internal class BaseRoundedCardCell: UICollectionViewCell {
     
-    internal static let cellHeight: CGFloat = 470.0
+    internal static let cellHeight: CGFloat = 413.0
     
     private static let kInnerMargin: CGFloat = 20.0
     
@@ -68,10 +68,10 @@ internal class BaseRoundedCardCell: UICollectionViewCell {
         if let shadowView = shadowView {
             let shadowPath = UIBezierPath(roundedRect: shadowView.bounds, cornerRadius: 14.0)
             shadowView.layer.masksToBounds = false
-            shadowView.layer.shadowRadius = 8.0
+            shadowView.layer.shadowRadius = 14.0
             shadowView.layer.shadowColor = UIColor.black.cgColor
             shadowView.layer.shadowOffset = CGSize(width: width, height: height)
-            shadowView.layer.shadowOpacity = 0.35
+            shadowView.layer.shadowOpacity = 0.22
             shadowView.layer.shadowPath = shadowPath.cgPath
         }
     }
@@ -81,7 +81,7 @@ internal class BaseRoundedCardCell: UICollectionViewCell {
     private func configureGestureRecognizer() {
         // Long Press Gesture Recognizer
         longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(gestureRecognizer:)))
-        longPressGestureRecognizer?.minimumPressDuration = 0.1
+        longPressGestureRecognizer?.minimumPressDuration = 0.2
         addGestureRecognizer(longPressGestureRecognizer!)
     }
     
