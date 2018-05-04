@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -75,23 +75,36 @@
                                                     <constraint firstAttribute="height" constant="500" id="FEJ-w9-gpH"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="The Art of the Impossible" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3B-K9-gc4">
-                                                <rect key="frame" x="20" y="37" width="264" height="26.5"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORLD PREMIERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYA-YL-0Nq">
-                                                <rect key="frame" x="20" y="20" width="125" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <rect key="frame" x="20" y="9" width="133" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="aSj-xW-BAs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                        <real key="value" value="32"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                                        <real key="value" value="0.55000000000000004"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inside the extraordinary world of Monument Valley 2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBE-bX-oK6">
-                                                <rect key="frame" x="20" y="441.5" width="295" height="38.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <rect key="frame" x="20" y="441.5" width="275" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                                        <real key="value" value="0.25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6u-LC-ZiY">
                                                 <rect key="frame" x="300" y="15" width="20" height="20"/>
@@ -104,12 +117,26 @@
                                                     <action selector="closeButtonDidPress:" destination="urk-bB-7gL" eventType="touchUpInside" id="zyZ-T4-WjN"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="The Art of the Impossible" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3B-K9-gc4">
+                                                <rect key="frame" x="20" y="40" width="185.5" height="67"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="kerning">
+                                                        <real key="value" value="0.75"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                        <real key="value" value="33"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="V2J-r3-S12" firstAttribute="leading" secondItem="T42-bT-V0h" secondAttribute="leading" id="BeG-Dp-q2W"/>
-                                            <constraint firstItem="E3B-K9-gc4" firstAttribute="top" secondItem="aYA-YL-0Nq" secondAttribute="bottom" id="Hng-Aw-zf1"/>
+                                            <constraint firstItem="E3B-K9-gc4" firstAttribute="top" secondItem="V2J-r3-S12" secondAttribute="top" constant="40" id="Hng-Aw-zf1"/>
                                             <constraint firstItem="kBE-bX-oK6" firstAttribute="leading" secondItem="T42-bT-V0h" secondAttribute="leading" constant="20" id="NJL-Xi-TJQ"/>
-                                            <constraint firstItem="aYA-YL-0Nq" firstAttribute="top" secondItem="V2J-r3-S12" secondAttribute="top" constant="20" id="Na4-F0-r2B"/>
+                                            <constraint firstItem="aYA-YL-0Nq" firstAttribute="top" secondItem="V2J-r3-S12" secondAttribute="top" constant="9" id="Na4-F0-r2B"/>
                                             <constraint firstAttribute="trailing" secondItem="V2J-r3-S12" secondAttribute="trailing" id="YBI-UR-Tbu"/>
                                             <constraint firstItem="V2J-r3-S12" firstAttribute="bottom" secondItem="kBE-bX-oK6" secondAttribute="bottom" constant="20" id="jEC-TI-Osc"/>
                                             <constraint firstItem="V2J-r3-S12" firstAttribute="top" secondItem="T42-bT-V0h" secondAttribute="top" id="lAL-SI-hSU"/>
@@ -130,7 +157,7 @@
                                     <constraint firstItem="T42-bT-V0h" firstAttribute="leading" secondItem="T0G-xr-uy0" secondAttribute="leading" id="gVi-xV-nag"/>
                                     <constraint firstItem="V2J-r3-S12" firstAttribute="width" secondItem="T0G-xr-uy0" secondAttribute="width" id="hUe-0x-xLE"/>
                                     <constraint firstItem="E3B-K9-gc4" firstAttribute="leading" secondItem="T0G-xr-uy0" secondAttribute="leading" constant="20" id="u9Q-YB-f47"/>
-                                    <constraint firstAttribute="trailing" secondItem="kBE-bX-oK6" secondAttribute="trailing" constant="20" id="xhN-vb-PTy"/>
+                                    <constraint firstAttribute="trailing" secondItem="kBE-bX-oK6" secondAttribute="trailing" constant="40" id="xhN-vb-PTy"/>
                                 </constraints>
                             </view>
                         </subviews>

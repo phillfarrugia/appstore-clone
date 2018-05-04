@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE61C2401F8E060F00AE564C /* UILabel+FontLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE61C23F1F8E060F00AE564C /* UILabel+FontLayout.swift */; };
 		F68726328846CEED2119C295 /* Pods_AppStoreClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0671D9ED588DEDA4879E66 /* Pods_AppStoreClone.framework */; };
 		F70D31EA1EF5EE4400DC3326 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D31E91EF5EE4400DC3326 /* GradientView.swift */; };
 		F70D31ED1EF6090400DC3326 /* WorldPremiereCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70D31EB1EF6090400DC3326 /* WorldPremiereCell.swift */; };
@@ -39,6 +40,7 @@
 		7969423CEC4E6739F6E8EED0 /* Pods-AppStoreClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppStoreClone/Pods-AppStoreClone.debug.xcconfig"; sourceTree = "<group>"; };
 		BD89E3096EF2B1D912C836DA /* Pods-AppStoreClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppStoreClone/Pods-AppStoreClone.release.xcconfig"; sourceTree = "<group>"; };
 		BF0671D9ED588DEDA4879E66 /* Pods_AppStoreClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE61C23F1F8E060F00AE564C /* UILabel+FontLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+FontLayout.swift"; sourceTree = "<group>"; };
 		F70D31E91EF5EE4400DC3326 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		F70D31EB1EF6090400DC3326 /* WorldPremiereCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorldPremiereCell.swift; path = CollectionViewCells/WorldPremiereCell.swift; sourceTree = "<group>"; };
 		F70D31EC1EF6090400DC3326 /* WorldPremiereCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WorldPremiereCell.xib; path = CollectionViewCells/WorldPremiereCell.xib; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				F7F0F1661EF5EB3900D73E20 /* UIView+Constraints.swift */,
 				F70D31F21EF60B5700DC3326 /* Reusable.swift */,
 				F70D31F01EF60B3100DC3326 /* UICollectionView+Reusable.swift */,
+				DE61C23F1F8E060F00AE564C /* UILabel+FontLayout.swift */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				F70D32031EF62E3D00DC3326 /* AppOfTheDayCell.swift in Sources */,
 				F7F0F14F1EF5EA1C00D73E20 /* AppDelegate.swift in Sources */,
 				F7C44AA61EF70CF700E8E658 /* StoryDetailViewController.swift in Sources */,
+				DE61C2401F8E060F00AE564C /* UILabel+FontLayout.swift in Sources */,
 				F70D320B1EF6532300DC3326 /* PresentStoryViewAnimationController.swift in Sources */,
 				F7F0F1631EF5EAEF00D73E20 /* BaseView.swift in Sources */,
 			);
