@@ -17,7 +17,7 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
         collectionView.registerReusableCell(FromTheEditorsCell.self)
         collectionView.registerReusableCell(AppOfTheDayCell.self)
         collectionView.registerReusableCell(GetStartedListCell.self)
-        collectionView.registerSupplementaryView(TodaySectionHeader.self, kind: UICollectionElementKindSectionHeader)
+		collectionView.registerSupplementaryView(TodaySectionHeader.self, kind: UICollectionView.elementKindSectionHeader)
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)

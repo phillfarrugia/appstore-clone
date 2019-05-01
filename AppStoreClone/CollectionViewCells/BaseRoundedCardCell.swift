@@ -85,7 +85,7 @@ internal class BaseRoundedCardCell: UICollectionViewCell {
         addGestureRecognizer(longPressGestureRecognizer!)
     }
     
-    internal func handleLongPressGesture(gestureRecognizer: UILongPressGestureRecognizer) {
+	@objc internal func handleLongPressGesture(gestureRecognizer: UILongPressGestureRecognizer) {
         if gestureRecognizer.state == .began {
             handleLongPressBegan()
         } else if gestureRecognizer.state == .ended || gestureRecognizer.state == .cancelled {
